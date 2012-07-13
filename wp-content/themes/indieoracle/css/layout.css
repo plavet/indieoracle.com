@@ -7,6 +7,31 @@
 /*GENERAL*/
 a.s-t-c {display: none;}/*skip to content linak*/
 
+a {
+	color: #000;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+	color:#B98500;
+}
+
+a:focus {
+	outline: none;
+}
+
+.ir {
+	border:0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	background-color: transparent;
+}
+
 body {
 	background:#EEE7D4 url(../images/bg.jpg) center top repeat-y;
 	margin: 0;
@@ -65,6 +90,7 @@ header {
 }
 
 .lang-switch a {float:left;}
+
 a.english{
 	background-position: -561px 0;
 	width: 29px;
@@ -87,340 +113,369 @@ a.french:hover{
 	width: 29px;
 	height: 22px;
 }
+
 /*NAVIGATION*/
 /*general*/
 ul#menu-navigation {
-margin:0;padding:0;
-float:left; width:900px;
-list-style: none;
-position:relative;
-
-height:50px;
+	margin:0;padding:0;
+	float:left; width:900px;
+	list-style: none;
+	position:relative;
+	height:50px;
 }
 ul#menu-navigation li {
-float:left;margin: 0;padding: 0;
+	float:left;margin: 0;padding: 0;background: none;
 }
 ul#menu-navigation li a {
-display: block;
-background: url(../images/sprites.png) no-repeat;
-text-indent: -99999px;
+	display: block;
+	background: url(../images/sprites.png) no-repeat;
+	text-indent: -99999px;
 }
 
 ul#menu-navigation li ul.sub-menu {
-position: absolute;
-display: none;
-z-index: 1000;
-}
-ul#menu-navigation li:hover ul.sub-menu {
-display: block;
+	position: absolute;
+	display: none;
+	z-index: 1000;
 }
 
+ul#menu-navigation li:hover ul.sub-menu {
+	display: block;
+}
 
 /*link style*/
-ul#menu-navigation li.home-link a{
+ul#menu-navigation li.home-link a {
 	background-position: 0 -117px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.home-link a:hover{
+ul#menu-navigation li.home-link a:hover {
 	background-position: 0 -171px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.home-link.current_page_item a{
+
+ul#menu-navigation li.home-link.current_page_item a {
 	background-position: 0 -171px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.books a{
+
+ul#menu-navigation li.books a {
 	background-position: -155px -117px;
 	width: 150px;
 	height: 50px;
 }
 
-ul#menu-navigation li.books a:hover{
-	background-position: -155px -170px;
-	width: 150px;
-	height: 50px;
-}
-ul#menu-navigation li.books.current_page_item a{
+ul#menu-navigation li.books a:hover {
 	background-position: -155px -170px;
 	width: 150px;
 	height: 50px;
 }
 
-ul#menu-navigation li.the_indie_oracle a{
+ul#menu-navigation li.books.current_page_item a {
+	background-position: -155px -170px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.the_indie_oracle a {
 	background-position: -309px -116px;
 	width: 150px;
 	height: 50px;
 }
 
-ul#menu-navigation li.the_indie_oracle a:hover{
+ul#menu-navigation li.the_indie_oracle a:hover {
 	background-position: -309px -169px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.the_indie_oracle.current_page_item a{
+
+ul#menu-navigation li.the_indie_oracle.current_page_item a {
 	background-position: -309px -169px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.appearances_and_events a{
+ul#menu-navigation li.appearances_and_events a {
 	background-position: -462px -115px;
 	width: 150px;
 	height: 50px;
 }
 
-ul#menu-navigation li.appearances_and_events a:hover{
+ul#menu-navigation li.appearances_and_events a:hover {
 	background-position: -463px -168px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.appearances_and_events.current_page_item a{
+ul#menu-navigation li.appearances_and_events.current_page_item a {
 	background-position: -463px -168px;
 	width: 150px;
 	height: 50px;
 }
 
-ul#menu-navigation li.feedback_and_reviews a{
+ul#menu-navigation li.feedback_and_reviews a {
 	background-position: -616px -115px;
 	width: 150px;
 	height: 50px;
 }
 
-ul#menu-navigation li.feedback_and_reviews a:hover{
+ul#menu-navigation li.feedback_and_reviews a:hover {
 	background-position: -617px -167px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.feedback_and_reviews.current_page_item a{
+
+ul#menu-navigation li.feedback_and_reviews.current_page_item a {
 	background-position: -617px -167px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.downloads a{
+
+ul#menu-navigation li.downloads a {
 	background-position: -770px -115px;
 	width: 150px;
 	height: 50px;
 }
 
-ul#menu-navigation li.downloads a:hover{
+ul#menu-navigation li.downloads a:hover {
 	background-position: -770px -167px;
 	width: 150px;
 	height: 50px;
 }
-ul#menu-navigation li.downloads.current_page_item a{
+
+ul#menu-navigation li.downloads.current_page_item a {
 	background-position: -770px -167px;
 	width: 150px;
 	height: 50px;
 }
 
 /*pod meniji*/
-ul#menu-navigation ul.sub-menu li.books_rick1 a{
+ul#menu-navigation ul.sub-menu li.books_rick1 a {
 	background-position: 0 -225px;
 	width: 600px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.books_rick1 a:hover{
-	background-position: 0 -260px;
-	width: 600px;
-	height: 31px;
-}
-ul#menu-navigation ul.sub-menu li.books_rick1.current_page_item a{
+ul#menu-navigation ul.sub-menu li.books_rick1 a:hover {
 	background-position: 0 -260px;
 	width: 600px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.books_arch1 a{
+ul#menu-navigation ul.sub-menu li.books_rick1.current_page_item a {
+	background-position: 0 -260px;
+	width: 600px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.books_arch1 a {
 	background-position: 0 -296px;
 	width: 600px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.books_arch1 a:hover{
+ul#menu-navigation ul.sub-menu li.books_arch1 a:hover {
 	background-position: 0 -332px;
 	width: 600px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.books_arch1.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.books_arch1.current_page_item a {
 	background-position: 0 -332px;
 	width: 600px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_about a{
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_about a {
 	background-position: -604px -225px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_about a:hover{
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_about a:hover {
 	background-position: -758px -225px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_about.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_about.current_page_item a {
 	background-position: -758px -225px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission a{
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission a {
 	background-position: -604px -260px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission a:hover{
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission a:hover {
 	background-position: -759px -261px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission.current_page_item a {
 	background-position: -759px -261px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_where a{
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_where a {
 	background-position: -604px -296px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_where a:hover{
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_where a:hover {
 	background-position: -759px -296px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.the_indie_oracle_where.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_where.current_page_item a {
 	background-position: -759px -296px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_radio a{
+ul#menu-navigation ul.sub-menu li.appearances_and_events_radio a {
 	background-position: -605px -332px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.appearances_and_events_radio a:hover{
+ul#menu-navigation ul.sub-menu li.appearances_and_events_radio a:hover {
 	background-position: -759px -331px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_radio.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_radio.current_page_item a {
 	background-position: -759px -331px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_television a{
+ul#menu-navigation ul.sub-menu li.appearances_and_events_television a {
 	background-position: -920px -262px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.appearances_and_events_television a:hover{
+ul#menu-navigation ul.sub-menu li.appearances_and_events_television a:hover {
 	background-position: -919px -297px;
 	width: 150px;
 	height: 31px;
 }
+
 ul#menu-navigation ul.sub-menu li.appearances_and_events_television.current_page_item a{
 	background-position: -919px -297px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_special a{
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_special a {
 	background-position: -919px -333px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.appearances_and_events_special a:hover{
+ul#menu-navigation ul.sub-menu li.appearances_and_events_special a:hover {
 	background-position: -919px -367px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_special.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_special.current_page_item a {
 	background-position: -919px -367px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs a{
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs a {
 	background-position: -605px -367px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs a:hover{
+ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs a:hover {
 	background-position: -759px -367px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs.current_page_item a {
 	background-position: -759px -367px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_signings a{
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_signings a {
 	background-position: -605px -403px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.appearances_and_events_signings a:hover{
+ul#menu-navigation ul.sub-menu li.appearances_and_events_signings a:hover {
 	background-position: -759px -403px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.appearances_and_events_signings.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_signings.current_page_item a {
 	background-position: -759px -403px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest a{
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest a {
 	background-position: 0 -368px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest a:hover{
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest a:hover {
 	background-position: -154px -368px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest.current_page_item a {
 	background-position: -154px -368px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed a{
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed a {
 	background-position: 0 -403px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed a:hover{
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed a:hover {
 	background-position: -154px -403px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed.current_page_item a {
 	background-position: -154px -403px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book a{
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book a {
 	background-position: -309px -367px;
 	width: 150px;
 	height: 31px;
 }
 
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book a:hover{
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book a:hover {
 	background-position: -309px -402px;
 	width: 150px;
 	height: 31px;
 }
-ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a{
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a {
 	background-position: -309px -402px;
 	width: 150px;
 	height: 31px;
@@ -432,7 +487,7 @@ ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a{
 	padding: 0;
 	margin: 0 auto;
 	height: 400px;
-	width: 620px;
+	width: 740px;
 	clear:none;
 }
 		
@@ -456,15 +511,19 @@ ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a{
 #carousel-descriptions {
 	list-style:none;
 	display:block;
-	width:850px;
-	margin:100px 0 0 0;
+	width:900px;
+	margin: 20px 0 5px 0;
 	padding:0;
+	background: #fff;
+	overflow: auto;
+	box-shadow: 2px 2px 15px #898989;
+	border-radius: 2px;
 }
 		
 #carousel-descriptions li {
-	font-size:24px;
-	font-weight:bold;
-	text-align:center;
+	font-size:14px;
+	font-weight:normal;
+	text-align:justify;
 	display:none;
 }
 		
@@ -508,4 +567,132 @@ ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a{
 	background:#600;
 	color:;
 	border-color:#400;
+}
+
+/*NASLOVI KNJIGA + SADRZAJ*/
+#carousel-descriptions h2{
+	float:left;
+	margin: 40px 40px 40px 30px;
+}
+
+#carousel-descriptions p {
+	width: 590px;
+	float: right;
+	margin: 50px 40px 0 0;
+}
+
+h2.archangels_hollytreasure_headline{
+	background-position: -949px -149px ;
+	width: 191px;
+	height: 103px;
+}
+
+#carousel-descriptions h2.rw_journey_headline{
+	background-position: -944px 0;
+	width: 208px;
+	height: 134px;
+	margin: 40px 20px 40px 30px;
+}
+
+
+a.book-more {
+	margin: 20px 70px 20px 0;
+	float: right;
+}
+
+/*FOOTER*/
+
+
+/*sco icons*/
+footer {
+	overflow: auto;
+}
+
+.newsletter-box {
+	margin: 5px 0 0 0;
+	float: right;
+}
+a.kilmulis {
+	clear:both;
+	float:left;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#B98500;
+	margin: 50px 0 20px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	text-shadow: 1px 2px 1px #fff;
+	padding:5px;
+	font-size: 12px;
+}
+
+a.kilmulis:hover {
+	color:#DB9F00;
+	text-shadow: 1px 2px 1px #fff;
+}
+
+ul.social-icons li {
+	float:left;
+}
+
+a.snfb{
+	background-position: -323px -60px ;
+	width: 27px;
+	height: 34px;
+}
+
+a.snfb:hover{
+	background-position: -354px -60px ;
+	width: 27px;
+	height: 34px;
+}
+
+a.sntw{
+	background-position: -385px -60px ;
+	width: 25px;
+	height: 34px;
+}
+
+a.sntw:hover{
+	background-position: -414px -60px ;
+	width: 25px;
+	height: 34px;
+}
+
+a.snb{
+	background-position: -443px -60px ;
+	width: 27px;
+	height: 34px;
+}
+
+a.snb:hover{
+	background-position: -474px -60px ;
+	width: 27px;
+	height: 34px;
+}
+
+a.snms{
+	background-position: -506px -60px ;
+	width: 24px;
+	height: 34px;
+}
+
+a.snms:hover{
+	background-position: -534px -60px ;
+	width: 24px;
+	height: 34px;
+}
+
+a.snyt{
+	background-position: -562px -60px ;
+	width: 27px;
+	height: 34px;
+}
+
+.snyt:hover{
+	background-position: -593px -60px ;
+	width: 27px;
+	height: 34px;
 }

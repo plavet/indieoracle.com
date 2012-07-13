@@ -27,5 +27,6 @@ Subscribe to the quarterly Oracle Newsletter <input type="">
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.7.1.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.roundabout.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/engine.js"></script>
+</div><!--/wrap-->
 </body>
 </html>

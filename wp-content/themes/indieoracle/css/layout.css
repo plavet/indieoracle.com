@@ -5,10 +5,427 @@
 .wp-caption { border:1px solid #666; text-align:center; background:#ccc; padding:10px; margin:10px }
 
 /*GENERAL*/
-a.s-t-c {display: none;}
+a.s-t-c {display: none;}/*skip to content linak*/
 
+body {
+	background:#EEE7D4 url(../images/bg.jpg) center top repeat-y;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	min-width:600px;
+	font-size:90%;
+	font-family:"Times New Roman";
+	color:#000;
+}
+
+#wrap {
+	width:900px;
+	margin:0 auto;
+	text-align: center;
+}
+
+/*sprites setup*/
+.logo, .the_indie_oracle_header, .english, .english_h, .french, .french_h, .home-link, .home-link_h, .books, .books_h, .the_indie_oracle, .the_indie_oracle_h, .appearances_and_events, .appearances_and_events_h, .feedback_and_reviews, .feedback_and_reviews_h, .downloads, .downloads_h, .rw_journey_headline, .naslov_mission, .naslov_where_i_go, .naslov_about_me, .archangels_hollytreasure_headline, .snfb, .snfb_h, .sntw, .sntw_h, .snb, .snb_h, .snms, .snms_h, .snyt, .snyt_h, .books_rick1, .books_rick1_h, .books_arch1, .books_arch1_h, .the_indie_oracle_about, .the_indie_oracle_about_h, .the_indie_oracle_mission, .the_indie_oracle_mission_h, .the_indie_oracle_where, .the_indie_oracle_where_h, .appearances_and_events_radio, .appearances_and_events_radio_h, .appearances_and_events_television, .appearances_and_events_television_h, .appearances_and_events_special, .appearances_and_events_special_h, .appearances_and_events_blogs, .appearances_and_events_blogs_h, .appearances_and_events_signings, .appearances_and_events_signings_h, .feedback_and_reviews_guest, .feedback_and_reviews_guest_h, .feedback_and_reviews_feed, .feedback_and_reviews_feed_h, .feedback_and_reviews_book, .feedback_and_reviews_book_h{
+	background: url(../images/sprites.png) no-repeat;
+	text-indent: -99999px;
+	display:block;
+}
+
+/*LAYOUT*/
+/*header*/
+header {
+	display:block;
+	position:relative;
+	overflow: auto;
+	margin: 5px 0 5px 0;
+}
+.logo{
+	background-position: 0 0;
+	width: 166px;
+	height: 111px;
+	float:left;
+	margin: 0 0 0 65px;
+}
+#access {clear:both;}
+
+.the_indie_oracle_header{
+	background-position: -169px 0;
+	width: 384px;
+	height: 39px;
+	margin: 40px 0 0 280px;
+}
+
+/*lang*/
+.lang-switch {
+	float:right;
+	width:58px;
+	text-align:left;
+	margin-top:-18px;
+}
+
+.lang-switch a {float:left;}
+a.english{
+	background-position: -561px 0;
+	width: 29px;
+	height: 22px;
+}
+
+a.english:hover{
+	background-position: -596px 0;
+	width: 29px;
+	height: 22px;
+}
+a.french{
+	background-position: -560px -32px ;
+	width: 29px;
+	height: 22px;
+}
+
+a.french:hover{
+	background-position: -595px -30px ;
+	width: 29px;
+	height: 22px;
+}
 /*NAVIGATION*/
-ul#menu-navigation li {display: inline;}
+/*general*/
+ul#menu-navigation {
+margin:0;padding:0;
+float:left; width:900px;
+list-style: none;
+position:relative;
+
+height:50px;
+}
+ul#menu-navigation li {
+float:left;margin: 0;padding: 0;
+}
+ul#menu-navigation li a {
+display: block;
+background: url(../images/sprites.png) no-repeat;
+text-indent: -99999px;
+}
+
+ul#menu-navigation li ul.sub-menu {
+position: absolute;
+display: none;
+z-index: 1000;
+}
+ul#menu-navigation li:hover ul.sub-menu {
+display: block;
+}
+
+
+/*link style*/
+ul#menu-navigation li.home-link a{
+	background-position: 0 -117px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.home-link a:hover{
+	background-position: 0 -171px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.home-link.current_page_item a{
+	background-position: 0 -171px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.books a{
+	background-position: -155px -117px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.books a:hover{
+	background-position: -155px -170px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.books.current_page_item a{
+	background-position: -155px -170px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.the_indie_oracle a{
+	background-position: -309px -116px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.the_indie_oracle a:hover{
+	background-position: -309px -169px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.the_indie_oracle.current_page_item a{
+	background-position: -309px -169px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.appearances_and_events a{
+	background-position: -462px -115px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.appearances_and_events a:hover{
+	background-position: -463px -168px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.appearances_and_events.current_page_item a{
+	background-position: -463px -168px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.feedback_and_reviews a{
+	background-position: -616px -115px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.feedback_and_reviews a:hover{
+	background-position: -617px -167px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.feedback_and_reviews.current_page_item a{
+	background-position: -617px -167px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.downloads a{
+	background-position: -770px -115px;
+	width: 150px;
+	height: 50px;
+}
+
+ul#menu-navigation li.downloads a:hover{
+	background-position: -770px -167px;
+	width: 150px;
+	height: 50px;
+}
+ul#menu-navigation li.downloads.current_page_item a{
+	background-position: -770px -167px;
+	width: 150px;
+	height: 50px;
+}
+
+/*pod meniji*/
+ul#menu-navigation ul.sub-menu li.books_rick1 a{
+	background-position: 0 -225px;
+	width: 600px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.books_rick1 a:hover{
+	background-position: 0 -260px;
+	width: 600px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.books_rick1.current_page_item a{
+	background-position: 0 -260px;
+	width: 600px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.books_arch1 a{
+	background-position: 0 -296px;
+	width: 600px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.books_arch1 a:hover{
+	background-position: 0 -332px;
+	width: 600px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.books_arch1.current_page_item a{
+	background-position: 0 -332px;
+	width: 600px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_about a{
+	background-position: -604px -225px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_about a:hover{
+	background-position: -758px -225px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_about.current_page_item a{
+	background-position: -758px -225px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission a{
+	background-position: -604px -260px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission a:hover{
+	background-position: -759px -261px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_mission.current_page_item a{
+	background-position: -759px -261px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_where a{
+	background-position: -604px -296px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_where a:hover{
+	background-position: -759px -296px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.the_indie_oracle_where.current_page_item a{
+	background-position: -759px -296px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_radio a{
+	background-position: -605px -332px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_radio a:hover{
+	background-position: -759px -331px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_radio.current_page_item a{
+	background-position: -759px -331px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_television a{
+	background-position: -920px -262px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_television a:hover{
+	background-position: -919px -297px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_television.current_page_item a{
+	background-position: -919px -297px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_special a{
+	background-position: -919px -333px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_special a:hover{
+	background-position: -919px -367px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_special.current_page_item a{
+	background-position: -919px -367px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs a{
+	background-position: -605px -367px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs a:hover{
+	background-position: -759px -367px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_blogs.current_page_item a{
+	background-position: -759px -367px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_signings a{
+	background-position: -605px -403px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.appearances_and_events_signings a:hover{
+	background-position: -759px -403px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.appearances_and_events_signings.current_page_item a{
+	background-position: -759px -403px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest a{
+	background-position: 0 -368px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest a:hover{
+	background-position: -154px -368px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_guest.current_page_item a{
+	background-position: -154px -368px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed a{
+	background-position: 0 -403px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed a:hover{
+	background-position: -154px -403px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_feed.current_page_item a{
+	background-position: -154px -403px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book a{
+	background-position: -309px -367px;
+	width: 150px;
+	height: 31px;
+}
+
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book a:hover{
+	background-position: -309px -402px;
+	width: 150px;
+	height: 31px;
+}
+ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a{
+	background-position: -309px -402px;
+	width: 150px;
+	height: 31px;
+}
+
 
 /*CAROUSEL*/
 .roundabout-holder {
@@ -16,13 +433,14 @@ ul#menu-navigation li {display: inline;}
 	margin: 0 auto;
 	height: 400px;
 	width: 620px;
+	clear:none;
 }
 		
 .roundabout-moveable-item {
 	height: 400px;
 	width: 320px;
 	cursor: pointer;
-	border:1px solid black;
+	/*border:1px solid black;*/
 	display:block;
 }
 		
@@ -61,6 +479,7 @@ ul#menu-navigation li {display: inline;}
 	overflow:auto;
 	border-collapse:collapse;
 	text-align:center;
+	display:none;
 }
 
 #carousel-controls span {

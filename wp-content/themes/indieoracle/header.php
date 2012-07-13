@@ -23,11 +23,19 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<div id="wrap">
+	<header>
+	<span class="logo">Indie Oracle logo</span>
 	<h1>
-		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+		<a class="the_indie_oracle_header" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 	</h1>
-	<p><?php bloginfo( 'description' ); ?></p>
+
+	<div class="lang-switch">
+		<a class="english" href="#">en</a>
+		<a class="french" href="#">fr</a>
+	</div>
+	</header>
+
 
 	<div id="access" role="navigation">
 	  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
@@ -35,3 +43,4 @@
 		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 	</div><!-- #access -->
+	<div style="clear:both;"></div>

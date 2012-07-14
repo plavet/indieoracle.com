@@ -7,4 +7,5 @@ Author URI: http://kilmulis.com
 */
 
 @import "css/reset.css";
+@import "css/bootstrap.min.css";
 @import "css/layout.css";

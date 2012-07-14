@@ -29,5 +29,5 @@ $controls.on('click dblclick', function() {
 		$carousel.roundabout('animateToChild', slideNum);
 	}
 });
-
+//autoplayDuration: 6000, autoplayPauseOnHover: true, <-autoplay setings
 }(jQuery));

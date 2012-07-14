@@ -8,7 +8,7 @@
 a.s-t-c {display: none;}/*skip to content linak*/
 
 a {
-	color: #000;
+	color: #000; text-decoration:underline;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -32,6 +32,13 @@ a:focus {
 	background-color: transparent;
 }
 
+span.ram {
+	display:block;
+	width:220px;
+	height:154px;
+	background: url(../images/ram.png) center top no-repeat;
+}
+
 body {
 	background:#EEE7D4 url(../images/bg.jpg) center top repeat-y;
 	margin: 0;
@@ -48,6 +55,15 @@ body {
 	width:900px;
 	margin:0 auto;
 	text-align: center;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+span.txt-intro {
+	font-size: 24px;
+	color: #A09068;
 }
 
 /*sprites setup*/
@@ -136,10 +152,20 @@ ul#menu-navigation li ul.sub-menu {
 	position: absolute;
 	display: none;
 	z-index: 1000;
+	margin: 0;
 }
 
 ul#menu-navigation li:hover ul.sub-menu {
 	display: block;
+}
+ul#menu-navigation li ul.sub-menu li{
+
+	height:100%;
+	float:none;
+	display: block;
+}
+ul#menu-navigation ul.sub-menu li a {
+	
 }
 
 /*link style*/
@@ -509,12 +535,12 @@ ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a 
 }
 		
 #carousel-descriptions {
-	list-style:none;
-	display:block;
-	width:900px;
+	list-style: none;
+	display: block;
+	width: 900px;
 	margin: 20px 0 5px 0;
-	padding:0;
-	background: #fff;
+	padding: 0;
+	background: url('../images/home-bg.png') repeat-y;
 	overflow: auto;
 	box-shadow: 2px 2px 15px #898989;
 	border-radius: 2px;
@@ -599,19 +625,206 @@ a.book-more {
 	margin: 20px 70px 20px 0;
 	float: right;
 }
-
-/*FOOTER*/
-
-
-/*sco icons*/
-footer {
-	overflow: auto;
+a.post-edit-link {
+	clear:both;
+	float:right;
+}
+/*NASLOVI + STRANE*/
+.headings {
+	float:left;
+}
+.headings-about {
+	margin: 0 0 0 20px;
+	float:left;
+}
+.headings-where {
+	margin: 0 0 0 20px;
+	float:left;
 }
 
-.newsletter-box {
+
+section {
+	margin: 120px 0 120px 0;
+	text-align: justify;
+	float:left;
+	width:900px;
+	position:relative;
+}
+
+section.where {
+	margin: 80px 0 80px 0;
+	text-align: justify;
+	float:left;
+	width:900px;
+	position:relative;
+}
+
+h2.naslov_mission{
+	background-position: -170px -59px ;
+	width: 147px;
+	height: 34px;
+	margin: 0 0 0 120px;
+}
+
+img.andi {
+	width:111px;
+	height:136px;
+	margin: 10px 55px 0 55px;
+}
+
+h2.naslov_about_me{
+	background-position: -631px -3px ;
+	width: 136px;
+	height: 72px;
+	float: right;
+	margin-top: 20px;
+}
+
+h2.naslov_where_i_go{
+	background-position: -775px -4px ;
+	width: 161px;
+	height: 73px;
+	margin: 120px 10px 70px 50px;
+}
+
+.thumbnails {
+	margin-left: -85px;
+}
+
+.thumbnails > li {
+	float: left;
+	margin-bottom: 18px;
+	margin-left: 95px;
+}
+
+.span3 {
+	width: 230px;
+}
+
+.thumbnail {
+	display: block;
+	padding: 4px;
+	line-height: 1;
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.thumbnail span.ram img {
+	padding:10px;
+}
+
+.content {
 	margin: 5px 0 0 0;
+	width: 600px;
 	float: right;
 }
+
+.content-about {
+	margin: 60px 0 0 0;
+	width: 600px;
+	float: right;
+}
+
+.content-where {
+	margin: 60px 0 0 0;
+	width: 900px;
+}
+
+ul.where-i-go-content li {
+
+}
+
+/*FOOTER*/
+footer {
+	clear:both;
+	overflow: auto;
+	margin-top: 10px;
+}
+
+/*NL BOX*/
+.newsletter-box {
+	width:500px;
+	float: right;
+}
+
+.nl-txt {
+	margin: 5px 0 0 10px;
+	float: left;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.wpcf7-not-valid {
+	width:150px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+	background: none;
+	border: none;
+	font-size: 18px;
+	padding: 0px 1px 6px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+input.wpcf7-form-control.wpcf7-submit:focus {
+	outline:none;
+}
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+	color:#B98500;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+	margin-bottom: 8px;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	background-color: #EDE9E8;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:150px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-ms-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+	border-color: rgba(224, 156, 34, 0.8);
+	outline: 0;
+	outline: thin dotted 9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(235, 151, 27, 0.6);
+}
+
+span.wpcf7-not-valid-tip {
+	position: absolute !important;
+	top: 25px !important;
+	left: 0 !important;
+	z-index: 100 !important;
+	background: transparent !important;
+	border: 1px solid red !important;
+	font-size: 10pt !important;
+	width: 220px !important;
+	padding: 2px !important;
+}
+
 a.kilmulis {
 	clear:both;
 	float:left;
@@ -631,6 +844,11 @@ a.kilmulis {
 a.kilmulis:hover {
 	color:#DB9F00;
 	text-shadow: 1px 2px 1px #fff;
+}
+
+/*soc icons*/
+ul.social-icons {
+	margin:0;
 }
 
 ul.social-icons li {

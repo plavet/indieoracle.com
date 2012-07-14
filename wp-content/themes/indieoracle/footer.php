@@ -21,7 +21,7 @@
 	<li><a class="snyt" href="#" title="Youtube" target="_blank">Youtube</a></li>
 </ul>
 <div class="newsletter-box">
-Subscribe to the quarterly Oracle Newsletter <input type="">
+<span class="nl-txt">Subscribe to the quarterly Oracle Newsletter</span> <?php echo do_shortcode( '[contact-form-7 id="88" title="Contact form 1"]' ); ?>
 </div>
 
 <a class="kilmulis" href="http://kilmulis.com" title="Kilmulis Design" target="_blank">Kilmulis Design &copy; 2012</a>

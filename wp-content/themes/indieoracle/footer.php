@@ -24,8 +24,9 @@
 <span class="nl-txt">Subscribe to the quarterly Oracle Newsletter</span> <?php echo do_shortcode( '[contact-form-7 id="88" title="Contact form 1"]' ); ?>
 </div>
 
-<a class="kilmulis" href="http://kilmulis.com" title="Kilmulis Design" target="_blank">Kilmulis Design &copy; 2012</a>
 </footer>
+
+<a class="kilmulis" href="http://kilmulis.com" title="Kilmulis Design" target="_blank">Kilmulis Design &copy; 2012</a>
 
 <?php wp_footer(); ?>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.7.1.min.js"></script>

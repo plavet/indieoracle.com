@@ -57,13 +57,18 @@ body {
 	text-align: center;
 }
 
+h1 {
+	font-size: 24px;
+	color:#a3770d;
+}
+
 p {
 	margin-bottom: 10px;
 }
 
 span.txt-intro {
 	font-size: 24px;
-	color: #A09068;
+	color: #a3770d;
 }
 
 /*sprites setup*/
@@ -109,6 +114,12 @@ header {
 
 a.english{
 	background-position: -561px 0;
+	width: 29px;
+	height: 22px;
+}
+
+a.english.current {
+	background-position: -596px 0;
 	width: 29px;
 	height: 22px;
 }
@@ -538,11 +549,12 @@ ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a 
 	list-style: none;
 	display: block;
 	width: 900px;
+	height:225px;
 	margin: 20px 0 5px 0;
 	padding: 0;
 	background: url('../images/home-bg.png') repeat-y;
 	overflow: auto;
-	box-shadow: 2px 2px 15px #898989;
+	/*box-shadow: 2px 2px 15px #898989;*/
 	border-radius: 2px;
 }
 		
@@ -598,13 +610,19 @@ ul#menu-navigation ul.sub-menu li.feedback_and_reviews_book.current_page_item a 
 /*NASLOVI KNJIGA + SADRZAJ*/
 #carousel-descriptions h2{
 	float:left;
-	margin: 40px 40px 40px 30px;
+	margin: 40px 0 40px 30px;
+}
+
+#carousel-descriptions p.first-child {
+	width: 580px;
+	float: right;
+	margin: 50px 40px 0 0;
 }
 
 #carousel-descriptions p {
-	width: 590px;
+	width: 580px;
 	float: right;
-	margin: 50px 40px 0 0;
+	margin: 20px 40px 0 0;
 }
 
 h2.archangels_hollytreasure_headline{
@@ -620,9 +638,45 @@ h2.archangels_hollytreasure_headline{
 	margin: 40px 20px 40px 30px;
 }
 
+#carousel-descriptions h2.archangels-well-of-souls-headline{
+	background: url(../images/headlines/archangels-well-of-souls-headline.png) no-repeat; ;
+	width: 191px;
+	height: 103px;
+	text-indent: -999999px;
+}
+
+#carousel-descriptions h2.gurk-whale-headline{
+	background: url(../images/headlines/gurk-whale-headline.png) no-repeat; ;
+	width: 189px;
+	height: 118px;
+	text-indent: -999999px;
+}
+
+#carousel-descriptions h2.r-w-hot-pursuit-headline{
+	background: url(../images/headlines/r-w-hot-pursuit-headline.png) no-repeat; ;
+	width: 226px;
+	height: 156px;
+	text-indent: -999999px;
+	margin-top: 25px;
+}
+
+#carousel-descriptions h2.stargate-deja-vue-headline{
+	background: url(../images/headlines/stargate-deja-vue-headline.png) no-repeat; ;
+	width: 210px;
+	height: 120px;
+	text-indent: -999999px;
+}
+
+#carousel-descriptions h2.stargate-skullduggery-headline{
+	background: url(../images/headlines/stargate-skullduggery-headline.png) no-repeat; ;
+	width: 210px;
+	height: 120px;
+	text-indent: -999999px;
+}
 
 a.book-more {
-	margin: 20px 70px 20px 0;
+	/*clear: both;*/
+	margin: 20px 45px 20px 0;
 	float: right;
 }
 a.post-edit-link {
@@ -735,15 +789,20 @@ h2.naslov_where_i_go{
 	width: 900px;
 }
 
-ul.where-i-go-content li {
-
+/*SADRZAJ*/
+#sadrzaj {
+	padding: 40px;
+	min-height: 200px;
 }
 
 /*FOOTER*/
 footer {
-	clear:both;
-	overflow: auto;
-	margin-top: 10px;
+	padding: 5px;
+	background-color: #E5DDC0;
+	clear: both;
+	/*overflow: auto;*/
+	border-radius: 2px;
+	height: 30px;
 }
 
 /*NL BOX*/
@@ -762,9 +821,10 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf
 }
 
 input.wpcf7-form-control.wpcf7-submit {
+	font-weight: bold;
 	background: none;
 	border: none;
-	font-size: 18px;
+	font-size: 14px;
 	padding: 0px 1px 6px 0;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -815,13 +875,13 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 span.wpcf7-not-valid-tip {
 	position: absolute !important;
-	top: 25px !important;
+	top: 30px !important;
 	left: 0 !important;
 	z-index: 100 !important;
 	background: transparent !important;
 	border: 1px solid red !important;
 	font-size: 10pt !important;
-	width: 220px !important;
+	width: 215px !important;
 	padding: 2px !important;
 }
 
@@ -831,14 +891,14 @@ a.kilmulis {
 	text-transform: uppercase;
 	text-decoration: none;
 	color:#B98500;
-	margin: 50px 0 20px 0;
+	margin: 0 0 30px 0;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	text-shadow: 1px 2px 1px #fff;
-	padding:5px;
-	font-size: 12px;
+	/*padding:5px;*/
+	font-size: 11px;
 }
 
 a.kilmulis:hover {
